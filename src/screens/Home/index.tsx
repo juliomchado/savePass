@@ -30,6 +30,8 @@ export function Home() {
 
   async function loadData() {
     const dataKey = '@savepass:logins';
+    // const storageSearchList = await AsyncStorage.getItem(datakey);
+    // console.log(storageSearchList)
     // Get asyncStorage data, use setSearchListData and setData
   }
 
@@ -38,7 +40,7 @@ export function Home() {
   }
 
   function handleChangeInputText(text: string) {
-    // Update searchText value
+    setSearchText(text);
   }
 
   useFocusEffect(useCallback(() => {
